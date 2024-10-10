@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // TIP: In a possible reduce variable in a package scope.
 
@@ -52,8 +50,6 @@ func main() {
 	//        - slices
 	//        - channels
 	//        - maps
-
-	// practice
 
 }
 
