@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"rsc.io/quote"
+)
 
 // TIP: In a possible reduce variable in a package scope.
 
@@ -51,8 +54,22 @@ func main() {
 	//        - channels
 	//        - maps
 
+	// Imprimir quote paquete de terceros
+	var resp int = helloWorld()
+	fmt.Println("Caracteres", resp)
+
 }
 
 func numberZ() {
 	fmt.Println("Print Z", z)
+}
+
+func helloWorld() int {
+	fmt.Println("quote.Hello()", quote.Hello())
+	resp, err := fmt.Println("quote.Go()", quote.Go())
+
+	if err != nil {
+		fmt.Println(err)
+	}
+	return resp
 }
