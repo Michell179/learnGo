@@ -18,6 +18,7 @@ func main() {
 
 	/*Solución*/
 
+	const precision = 2
 	var base float64
 	var altura float64
 
@@ -32,9 +33,9 @@ func main() {
 	area := calcularArea(base, altura)
 	perimetro := calcularPerimetro(base, altura, hipotenusa)
 
-	fmt.Println("Hipotenusa:", hipotenusa)
-	fmt.Println("Area:", area)
-	fmt.Println("Perimetro:", perimetro)
+	fmt.Printf("Hipotenusa: %.*f \n", precision, hipotenusa)
+	fmt.Printf("Area: %.*f \n", precision, area)
+	fmt.Printf("Perimetro: %.*f \n", precision, perimetro)
 
 }
 
