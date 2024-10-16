@@ -31,6 +31,7 @@ func main() {
 func dividir(dividendo, divisor int) (int, error) {
 	if divisor == 0 {
 		// Creamos nuestro propio mensaje personalizado con errors.New(string)
+		// Se puede usar fmt.ErrorF(string) // formatearlo y retornarlo
 		return syscall.INFINITE, errors.New("Infinity")
 	}
 	return dividendo / divisor, nil
