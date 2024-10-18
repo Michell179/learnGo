@@ -6,6 +6,11 @@ import (
 )
 
 func main() {
+	/*
+		Uso de paquete interno para el manejo de logs
+		Y configuración para ser almacenados en un archivo al
+		Ejecutar nuestra aplicación
+	*/
 	// Centralizar todos los logs en un solo archivo.
 	file, err := os.OpenFile("info.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {

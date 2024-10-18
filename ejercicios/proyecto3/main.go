@@ -4,17 +4,14 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 )
 
 func main() {
-	log.SetPrefix("main(): ")
-
 	var contactos []Contact
 	err := cargarContactsDesdeArchivo(&contactos)
 	if err != nil {
-		log.Println("Error al cargar contactos:", err)
+		fmt.Println("Error al cargar contactos:", err)
 	}
 
 	// Crear instancia de bufio (Lector de datos)
