@@ -18,4 +18,4 @@ fmt.Prtinln("Learn Go and be happy")
 
 Go: "keep healthy" 
 
-From: Colombia.
+From -> Colombia.
